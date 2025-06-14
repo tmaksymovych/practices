@@ -8,5 +8,8 @@ grade = {
 }
 
 
-with open ("student.json", 'w') as file:
-    json.dump(grade, file, indent=1)
+with open ("student.json", 'w', encoding="utf8") as file:
+    json.dump(grade, file, indent=2, ensure_ascii=False)
+
+
+    
